@@ -24,7 +24,7 @@ public class Trashcan extends JavaPlugin implements Listener {
         saveConfig();
 
         Bukkit.getPluginManager().registerEvents(this, this);
-        getCommand("reload").setExecutor(new Reload());
+        getCommand("reload").setExecutor(new Reload(this));
         Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "Trashcan is now working");
     }
 
