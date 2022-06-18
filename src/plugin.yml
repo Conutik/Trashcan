@@ -1,0 +1,7 @@
+name: trashcan
+description:
+version: 1.0
+main: com.conutik.trashcan.Main
+commands:
+  reload:
+    description: "Reload config"
