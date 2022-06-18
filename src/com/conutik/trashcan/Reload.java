@@ -8,6 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class Reload implements CommandExecutor {
+    // fixed this :D
     private final Trashcan main;
     public Reload(Trashcan main) {
         this.main = main;
