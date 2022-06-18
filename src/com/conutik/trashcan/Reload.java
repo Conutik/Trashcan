@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class Reload implements CommandExecutor {
-    final Trashcan main = new Trashcan().getMain();
+    final Trashcan main = new Trashcan();
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 

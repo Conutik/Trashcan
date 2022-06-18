@@ -13,6 +13,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Trashcan extends JavaPlugin implements Listener {
 
     private final Trashcan main = this;
+
+    Trashcan constructor() {
+        return main;
+    }
+
     public FileConfiguration config = getConfig();
 
     @Override
