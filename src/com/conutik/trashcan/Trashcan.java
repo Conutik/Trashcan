@@ -13,10 +13,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Trashcan extends JavaPlugin implements Listener {
 
 
-    public FileConfiguration config = getConfig();
+    private FileConfiguration config;
 
     @Override
     public void onEnable() {
+        config = getConfig();
         config.addDefault("inventoryname", "'Trashcan'");
         config.addDefault("trashblock", "CAULDRON");
         config.options().copyDefaults(true);
