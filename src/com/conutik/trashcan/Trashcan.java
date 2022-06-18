@@ -14,10 +14,6 @@ public class Trashcan extends JavaPlugin implements Listener {
 
     private final Trashcan main = this;
 
-    Trashcan constructor() {
-        return main;
-    }
-
     public FileConfiguration config = getConfig();
 
     @Override
@@ -49,8 +45,5 @@ public class Trashcan extends JavaPlugin implements Listener {
     public void updateConfig() {
         config = getConfig();
     }
-
-    public Trashcan getMain() { return main; }
-
 
 }
