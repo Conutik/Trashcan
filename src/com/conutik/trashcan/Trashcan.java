@@ -10,14 +10,13 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin implements Listener {
+public class Trashcan extends JavaPlugin implements Listener {
 
-    public static Main main;
+    private final Trashcan main = this;
     public FileConfiguration config = getConfig();
 
     @Override
     public void onEnable() {
-        main = this;
         config.addDefault("inventoryname", "'Trashcan'");
         config.addDefault("trashblock", "CAULDRON");
         config.options().copyDefaults(true);
@@ -45,6 +44,8 @@ public class Main extends JavaPlugin implements Listener {
     public void updateConfig() {
         config = getConfig();
     }
+
+    public Trashcan getMain() { return main; }
 
 
 }
